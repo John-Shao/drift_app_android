@@ -1,0 +1,104 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <style name="no_bg_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:maxWidth">10000dp</item>
+
+        <!-- <item name="android:windowBackground">@drawable/shape_fullscreen</item> -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="Animations" />
+    <style name="Animations.PopUpMenu" />
+    <style name="Animations.PopUpMenu.Appear">
+        <item name="android:windowEnterAnimation">@anim/appear</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency) switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_link_red</item>
+
+        <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+        <!--        <item name="colorSwitchThumbNormal">@color/theme_color_gray</item>-->
+
+        <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色 30%这个颜色 -->
+        <item name="android:colorForeground">@color/white</item>
+
+        <!--使用方法： 在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+    </style>
+
+    <style name="MyApp.PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="PopupMenu.ListPopupWindow" parent="@android:style/Widget.Holo.ListPopupWindow">
+
+        <!-- <item name="android:popupBackground">@color/menu_dropdown_panel_dark</item> -->
+        <item name="android:popupBackground">@color/gray_252525</item>
+    </style>
+    <style name="AppTheme.Base" parent="Base.Theme.AppCompat.Light">
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.ListPopupWindow</item>
+        <item name="android:windowBackground">@color/windows_bg</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="colorPrimary">@color/base_color</item>
+        <item name="colorAccent">#795548</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+          <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>-->
+
+    </style>
+
+    <!--主窗口的theme-->
+    <style name="ActionbarSpannerTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="color">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="popupMenuStyle">@style/MyApp.PopupMenu</item>
+
+        <!-- <item name="android:alertDialogTheme">@style/ThemeHoloLightDialogAlert</item>
+         <item name="android:textAppearanceLargePopupMenu">@style/MyPopupMenu.Large</item>
+         <item name="android:textAppearanceSmallPopupMenu">@style/MyPopupMenu.Small</item>
+         <item name="android:actionModeBackground">@drawable/gray_drawable</item>
+         <item name="android:actionModeCloseDrawable">@drawable/task_add_cab_back</item>
+         <item name="android:windowActionModeOverlay">true</item>
+
+
+         <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+         <item name="android:actionMenuTextColor">@color/white</item>
+
+         &lt;!&ndash;抽屉导航的旋转箭头&ndash;&gt;
+         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+
+    </style>
+
+</resources>
