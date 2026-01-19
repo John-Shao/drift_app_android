@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPreviewBG"
+    tools:context="com.drift.camcontroldemo.LinkMeetingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/link_back_btn" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/link_meeting"
+        android:textColor="#D22F42"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/tv_meeting_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meeting_id"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_meeting_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_meeting_id_label"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="@string/meeting_id_hint"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_meeting_password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_meeting_id"
+            android:layout_marginTop="30dp"
+            android:text="@string/meeting_password"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_meeting_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_meeting_password_label"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="@string/meeting_password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_meeting_action"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_meeting_password"
+            android:layout_marginTop="50dp"
+            android:background="#D22F42"
+            android:text="@string/join_meeting"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

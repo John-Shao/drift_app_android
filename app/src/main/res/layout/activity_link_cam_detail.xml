@@ -397,6 +397,32 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/rl_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_toLeftOf="@id/rl_reboot"
+            android:layout_toRightOf="@id/rl_live"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/ib_meeting"
+                android:layout_width="69dp"
+                android:layout_height="68dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/link_live_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_meeting"
+                android:layout_centerHorizontal="true"
+                android:text="@string/link_meeting"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/rl_reboot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
