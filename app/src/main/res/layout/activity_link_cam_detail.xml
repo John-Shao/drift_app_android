@@ -345,23 +345,23 @@
                 android:textColor="@color/white" />
         </RelativeLayout>
 
+        <!-- 文件按钮 -->
         <RelativeLayout
             android:id="@+id/rl_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="27dp"
-            android:layout_marginRight="20dp"
             android:layout_marginBottom="35dp"
             android:visibility="visible">
-
+        
             <ImageButton
                 android:id="@+id/ib_setting"
                 android:layout_width="69dp"
                 android:layout_height="68dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/link_file_btn" />
-
+        
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -370,23 +370,24 @@
                 android:text="@string/cam_files"
                 android:textColor="@color/white" />
         </RelativeLayout>
-
+        
+        <!-- 直播按钮 -->
         <RelativeLayout
             android:id="@+id/rl_live"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/rl_res"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"
             android:layout_marginBottom="35dp"
             android:visibility="visible">
-
+        
             <ImageButton
                 android:id="@+id/ib_live"
                 android:layout_width="69dp"
                 android:layout_height="68dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/link_live_btn" />
-
+        
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -395,24 +396,24 @@
                 android:text="@string/link_live"
                 android:textColor="@color/white" />
         </RelativeLayout>
-
+        
+        <!-- 会议按钮 -->
         <RelativeLayout
             android:id="@+id/rl_meeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="200dp"
             android:layout_marginBottom="35dp"
-            android:layout_toLeftOf="@id/rl_reboot"
-            android:layout_toRightOf="@id/rl_live"
             android:visibility="visible">
-
+        
             <ImageButton
                 android:id="@+id/ib_meeting"
                 android:layout_width="69dp"
                 android:layout_height="68dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/link_live_btn" />
-
+        
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -421,22 +422,24 @@
                 android:text="@string/link_meeting"
                 android:textColor="@color/white" />
         </RelativeLayout>
-
+        
+        <!-- 重启按钮 -->
         <RelativeLayout
             android:id="@+id/rl_reboot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/rl_fps"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
             android:layout_marginBottom="35dp">
-
+        
             <ImageButton
                 android:id="@+id/ib_reboot"
                 android:layout_width="69dp"
                 android:layout_height="68dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/link_reboot_btn" />
-
+        
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -445,23 +448,24 @@
                 android:text="@string/Control_reeboot"
                 android:textColor="@color/white" />
         </RelativeLayout>
-
-
+        
+        <!-- 关闭相机按钮 - 已隐藏 -->
         <RelativeLayout
             android:id="@+id/rl_power_off"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/rl_fps"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="35dp">
-
+            android:layout_marginBottom="35dp"
+            android:visibility="gone">
+        
             <ImageButton
                 android:id="@+id/ib_power_off"
                 android:layout_width="69dp"
                 android:layout_height="68dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/link_power_off_btn" />
-
+        
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
