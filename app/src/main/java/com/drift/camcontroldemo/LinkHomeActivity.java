@@ -129,7 +129,7 @@ public class LinkHomeActivity extends AppCompatActivity {
     protected void onDestroy()
     {
         mForeamCamCtrl.stopReceive();
-        super.onPause();
+        super.onDestroy();
     }
 
     private void initRecycleViewAdapter()

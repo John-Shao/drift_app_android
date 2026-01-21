@@ -133,7 +133,7 @@ public class LinkAddCameraActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        super.onPause();
+        super.onDestroy();
     }
 
     @Override

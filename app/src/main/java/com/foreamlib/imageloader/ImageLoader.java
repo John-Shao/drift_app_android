@@ -118,6 +118,7 @@ public final class ImageLoader {
      *                               {@link ImageLoader}.
      * @see #IMAGE_LOADER_SERVICE
      */
+    @SuppressWarnings("WrongConstant")
     public static ImageLoader get(Context context) {
         ImageLoader loader = (ImageLoader) context.getSystemService(IMAGE_LOADER_SERVICE);
         if (loader == null) {
