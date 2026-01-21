@@ -54,15 +54,4 @@
     <string name="link_live_url">直播地址:</string>
     <string name="link_input_live_url">输入直播地址</string>
     <string name="link_send_successfully">发送成功</string>
-    <string name="link_meeting">巨思会议</string>
-    <string name="meeting_id">会议ID</string>
-    <string name="meeting_password">会议密码</string>
-    <string name="join_meeting">加入会议</string>
-    <string name="leave_meeting">退出会议</string>
-    <string name="meeting_id_hint">请输入会议ID</string>
-    <string name="meeting_password_hint">请输入会议密码</string>
-    <string name="join_meeting_success">加入会议成功</string>
-    <string name="leave_meeting_success">退出会议成功</string>
-    <string name="join_meeting_failed">加入会议失败</string>
-    <string name="leave_meeting_failed">退出会议失败</string>
 </resources>

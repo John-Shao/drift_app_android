@@ -29,9 +29,6 @@
             android:name=".LinkLiveActivity"
             android:exported="false" />
         <activity
-            android:name=".LinkMeetingActivity"
-            android:exported="false" />
-        <activity
             android:name=".LinkFileListActivity"
             android:exported="false" />
         <activity

@@ -53,15 +53,4 @@
     <string name="link_live_url">Live URL:</string>
     <string name="link_input_live_url">input live URL</string>
     <string name="link_send_successfully">Send Successfully</string>
-    <string name="link_meeting">Meeting</string>
-    <string name="meeting_id">Meeting ID</string>
-    <string name="meeting_password">Meeting Password</string>
-    <string name="join_meeting">Join Meeting</string>
-    <string name="leave_meeting">Leave Meeting</string>
-    <string name="meeting_id_hint">Please enter meeting ID</string>
-    <string name="meeting_password_hint">Please enter meeting password</string>
-    <string name="join_meeting_success">Join meeting successfully</string>
-    <string name="leave_meeting_success">Leave meeting successfully</string>
-    <string name="join_meeting_failed">Join meeting failed</string>
-    <string name="leave_meeting_failed">Leave meeting failed</string>
 </resources>

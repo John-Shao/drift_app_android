@@ -462,14 +462,6 @@ public class LinkCamDetailActivity extends AppCompatActivity implements PlayFrag
                 startActivity(intent);
             }
         });
-        findViewById(R.id.ib_meeting).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), LinkMeetingActivity.class);
-                intent.putExtra("device_ip", camIP);
-                startActivity(intent);
-            }
-        });
         rlReboot = (RelativeLayout) findViewById(R.id.rl_reboot);
         findViewById(R.id.ib_reboot).setOnClickListener(new View.OnClickListener() {
             @Override
